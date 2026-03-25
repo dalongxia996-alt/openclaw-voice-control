@@ -34,3 +34,6 @@ jobs:
           bash -n scripts/start_overlay.sh
           bash -n scripts/install_macos.sh
           bash -n scripts/doctor.sh
+
+      - name: Verify dependency files stay in sync
+        run: ./scripts/check_requirements_sync.py
